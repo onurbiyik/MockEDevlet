@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32602.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MockEDevlet", "MockEDevlet\MockEDevlet.csproj", "{A14B02D1-DFE9-40F6-8DC5-27CCF520336A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorld", "HelloWorld\HelloWorld.csproj", "{4BFF296D-ECFC-4EF7-9B91-3019FFD349DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A14B02D1-DFE9-40F6-8DC5-27CCF520336A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A14B02D1-DFE9-40F6-8DC5-27CCF520336A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A14B02D1-DFE9-40F6-8DC5-27CCF520336A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A14B02D1-DFE9-40F6-8DC5-27CCF520336A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BFF296D-ECFC-4EF7-9B91-3019FFD349DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BFF296D-ECFC-4EF7-9B91-3019FFD349DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BFF296D-ECFC-4EF7-9B91-3019FFD349DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BFF296D-ECFC-4EF7-9B91-3019FFD349DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9C0B8374-B893-4864-8A05-301F81079675}
+	EndGlobalSection
+EndGlobal

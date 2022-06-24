@@ -1,0 +1,16 @@
+﻿@page
+@using Microsoft.AspNetCore.Identity
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>Hello Dear @User.Identity.Name</h1>
+
+
+<h2>User Claims</h2>
+<table class="table">
+@foreach (var clm in User.Claims)
+{
+    <tr><td>@clm.Type</td><td>@clm.Value</td></tr>
+}
+</table>
