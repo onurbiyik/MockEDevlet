@@ -58,6 +58,9 @@ public static class Config
                 "EDevletTemelBilgileri"
             },
 
+            // clients may have different sso lifes
+            UserSsoLifetime = 10,
+
             RequirePkce = true,
             AllowPlainTextPkce = false
         }};

@@ -42,7 +42,16 @@ builder.Services.AddAuthentication(opt => {
         // TCKN standart bir oidc alanı olmadığı için bir mapping gerekli.
         opt.ClaimActions.MapUniqueJsonKey("tckn", "tckn"); 
 
+        // save claims to asp.net cookie
         opt.SaveTokens = true;
+
+        
+        // require users to log in every time, even when they are logged in. (optional)
+        //opt.Events.OnRedirectToIdentityProvider = ctx =>
+        //{
+        //    ctx.ProtocolMessage.Prompt = "login";
+        //    return Task.CompletedTask;
+        //};
     });
 
 var app = builder.Build();
