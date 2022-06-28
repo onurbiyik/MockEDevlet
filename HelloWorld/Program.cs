@@ -5,7 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages(options =>
 {
-    options.Conventions.AuthorizePage("/Privacy");
+    options.Conventions.AuthorizePage("/ListMyClaims");
 });
 
 builder.Services.AddAuthentication(opt => { 
