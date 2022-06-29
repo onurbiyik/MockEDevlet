@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace Aydipi.Pages.Redirect;
+namespace MockEDevlet.Pages.Redirect;
 
 [AllowAnonymous]
 public class IndexModel : PageModel

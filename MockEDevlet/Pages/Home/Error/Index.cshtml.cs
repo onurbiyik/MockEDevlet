@@ -2,7 +2,7 @@ using Duende.IdentityServer.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace Aydipi.Pages.Error;
+namespace MockEDevlet.Pages.Error;
 
 [AllowAnonymous]
 [SecurityHeaders]

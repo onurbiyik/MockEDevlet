@@ -1,5 +1,5 @@
 
-namespace Aydipi.Pages.Logout;
+namespace MockEDevlet.Pages.Logout;
 
 public class LogoutOptions
 {

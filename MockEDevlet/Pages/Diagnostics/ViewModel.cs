@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Authentication;
 using System.Text;
 using System.Text.Json;
 
-namespace Aydipi.Pages.Diagnostics;
+namespace MockEDevlet.Pages.Diagnostics;
 
 public class ViewModel
 {

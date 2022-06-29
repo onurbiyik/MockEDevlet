@@ -5,7 +5,7 @@
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace Aydipi.Pages;
+namespace MockEDevlet.Pages;
 
 public class SecurityHeadersAttribute : ActionFilterAttribute
 {

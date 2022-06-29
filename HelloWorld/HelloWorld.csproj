@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="6.0.6" />
+    <PackageReference Include="Microsoft.Web.LibraryManager.Build" Version="2.1.174" />
   </ItemGroup>
 
 </Project>

@@ -1,4 +1,4 @@
-namespace Aydipi.Pages.Login;
+namespace MockEDevlet.Pages.Login;
 
 public class LoginOptions
 {

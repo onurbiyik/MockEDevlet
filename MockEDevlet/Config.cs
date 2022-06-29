@@ -8,7 +8,7 @@ namespace Aydipi;
 
 public static class Config
 {
-    public static List<TestUser> Users => new List<TestUser>()
+    public static List<TestUser> Users => new ()
         {
             new TestUser { Username = "onur", Password = "123", SubjectId = "AAAAAAA9-0000-434B-0000-A3932222DABE", Claims = new List<Claim> { new (JwtClaimTypes.Email, "onur@mockdevlet.com"), new (JwtClaimTypes.Role, "admin"), new ("tckn", "00000701"), new ("name", "ONUR BIYIK"), new("given_name", "Onur"), new("family_name", "Biyik") } },
             new TestUser { Username = "arzu", Password = "123", SubjectId = "BBBBBBB9-0000-434B-0000-A3932222DABE", Claims = new List<Claim> { new (JwtClaimTypes.Email, "arzu@mockdevlet.com"), new (JwtClaimTypes.Role, "admin"), new ("tckn", "00000702"), new ("name", "ARZU BATAK"), new("given_name", "Arzu"), new("family_name", "Batak") } },
@@ -16,8 +16,7 @@ public static class Config
             new TestUser { Username = "mert", Password = "123", SubjectId = "DDDDDDD9-0000-434B-0000-A3932222DABE", Claims = new List<Claim> { new (JwtClaimTypes.Email, "mert@mockdevlet.com"), new (JwtClaimTypes.Role, "admin"), new ("tckn", "00000704"), new ("name", "MERT BORAK"), new("given_name", "Mert"), new("family_name", "Borak") } },
         };    
 
-    public static IEnumerable<IdentityResource> IdentityResources =>
-        new IdentityResource[]
+    public static IEnumerable<IdentityResource> IdentityResources => new []
         {
             new IdentityResources.OpenId(),
             new IdentityResources.Profile(),
@@ -36,13 +35,13 @@ public static class Config
             }
         };
 
-    public static IEnumerable<ApiScope> ApiScopes =>
-        new ApiScope[]
+    public static IEnumerable<ApiScope> ApiScopes => new ApiScope[]
             {
             };
 
 
-    public static IEnumerable<Client> Clients => new Client[] { new Client
+    public static IEnumerable<Client> Clients => new [] { 
+        new Client
         {
             ClientId = "EDevletinBizeVerecegiClientId",
             ClientName = "Hello World Uygulamasi",
@@ -64,4 +63,8 @@ public static class Config
             RequirePkce = true,
             AllowPlainTextPkce = false
         }};
+
+    public static IEnumerable<OidcProvider> OidcProviders => new OidcProvider[]
+    {
+    };
 }

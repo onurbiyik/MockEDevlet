@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace Aydipi.Pages.Consent;
+namespace MockEDevlet.Pages.Consent;
 
 [Authorize]
 [SecurityHeadersAttribute]

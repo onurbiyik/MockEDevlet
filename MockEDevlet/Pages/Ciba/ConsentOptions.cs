@@ -2,7 +2,7 @@
 // See LICENSE in the project root for license information.
 
 
-namespace Aydipi.Pages.Ciba;
+namespace MockEDevlet.Pages.Ciba;
 
 public class ConsentOptions
 {

@@ -4,7 +4,7 @@
 
 using System.ComponentModel.DataAnnotations;
 
-namespace Aydipi.Pages.Login;
+namespace MockEDevlet.Pages.Login;
 
 public class InputModel
 {

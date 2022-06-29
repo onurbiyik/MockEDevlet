@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace Aydipi.Pages.Ciba;
+namespace MockEDevlet.Pages.Ciba;
 
 [SecurityHeaders]
 [Authorize]

@@ -2,7 +2,7 @@ using Duende.IdentityServer.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace Aydipi.Pages.Logout;
+namespace MockEDevlet.Pages.Logout;
 
 [SecurityHeaders]
 [AllowAnonymous]

@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace Aydipi.Pages.Login;
+namespace MockEDevlet.Pages.Login;
 
 [SecurityHeaders]
 [AllowAnonymous]

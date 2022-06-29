@@ -1,7 +1,7 @@
 // Copyright (c) Duende Software. All rights reserved.
 // See LICENSE in the project root for license information.
 
-namespace Aydipi.Pages.Consent;
+namespace MockEDevlet.Pages.Consent;
 
 public class ViewModel
 {

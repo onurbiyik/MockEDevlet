@@ -3,7 +3,7 @@
 // See LICENSE in the project root for license information.
 
 
-namespace Aydipi.Pages.Logout;
+namespace MockEDevlet.Pages.Logout;
 
 public class LoggedOutViewModel
 {

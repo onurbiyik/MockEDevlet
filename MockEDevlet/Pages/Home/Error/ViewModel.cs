@@ -3,7 +3,7 @@
 
 using Duende.IdentityServer.Models;
 
-namespace Aydipi.Pages.Error;
+namespace MockEDevlet.Pages.Error;
 
 public class ViewModel
 {

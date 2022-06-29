@@ -1,4 +1,4 @@
-namespace Aydipi.Pages.Grants;
+namespace MockEDevlet.Pages.Grants;
 
 public class ViewModel
 {

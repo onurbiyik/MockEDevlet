@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Authorization;
 
-namespace Aydipi.Pages.Diagnostics;
+namespace MockEDevlet.Pages.Diagnostics;
 
 [SecurityHeaders]
 [Authorize]

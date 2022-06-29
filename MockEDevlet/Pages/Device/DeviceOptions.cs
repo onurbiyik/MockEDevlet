@@ -2,7 +2,7 @@
 // See LICENSE in the project root for license information.
 
 
-namespace Aydipi.Pages.Device;
+namespace MockEDevlet.Pages.Device;
 
 public class DeviceOptions
 {

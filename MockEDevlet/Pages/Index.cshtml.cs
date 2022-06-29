@@ -2,7 +2,7 @@ using System.Reflection;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace Aydipi.Pages.Home;
+namespace MockEDevlet.Pages.Home;
 
 [AllowAnonymous]
 public class Index : PageModel

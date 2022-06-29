@@ -1,4 +1,4 @@
-namespace Aydipi.Pages.Device;
+namespace MockEDevlet.Pages.Device;
 
 public class ViewModel
 {

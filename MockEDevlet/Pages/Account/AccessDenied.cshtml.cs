@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace Aydipi.Pages.Account;
+namespace MockEDevlet.Pages.Account;
 
 public class AccessDeniedModel : PageModel
 {

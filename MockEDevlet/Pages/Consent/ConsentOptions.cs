@@ -2,7 +2,7 @@
 // See LICENSE in the project root for license information.
 
 
-namespace Aydipi.Pages.Consent;
+namespace MockEDevlet.Pages.Consent;
 
 public class ConsentOptions
 {

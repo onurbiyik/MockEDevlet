@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace Aydipi.Pages.Device;
+namespace MockEDevlet.Pages.Device;
 
 [SecurityHeaders]
 [Authorize]
