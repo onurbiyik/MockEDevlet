@@ -48,7 +48,7 @@ public static class Config
             ClientSecrets = new List<Secret> {new Secret("EDevletinBizeVerecegiSecret".Sha256())},
 
             AllowedGrantTypes = GrantTypes.Code,
-            RedirectUris = new List<string> {"https://localhost:7214/signin-oidc"},
+            RedirectUris = new List<string> {"https://localhost:7214/signin-oidc"},            
             AllowedScopes = new List<string>
             {
                 IdentityServerConstants.StandardScopes.OpenId,
@@ -58,10 +58,24 @@ public static class Config
             },
 
             // clients may have different sso lifes
-            UserSsoLifetime = 10,
+            UserSsoLifetime = 10, // seconds
 
             RequirePkce = true,
-            AllowPlainTextPkce = false
+            AllowPlainTextPkce = false,
+            
+            // TODO: learn what this is
+            // PostLogoutRedirectUris = { "https://localhost:7214/signout-callback-oidc" },
+
+            // Server-to-Server single sign out
+            // This is Idp initiated sign-out scenario
+            // call this url once the user signs out from MockEdevlet IdP,
+            BackChannelLogoutUri = "https://localhost:7214/backchannel-logout",
+
+            // Client-to-Server single sign out. 
+            // This is Idp initiated sign-out scenario.
+            // opens an iframe or smthng mimicking the user signing out.
+            FrontChannelLogoutUri = "https://localhost:7214/frontchannel-logout",
+
         }};
 
     public static IEnumerable<OidcProvider> OidcProviders => new OidcProvider[]
