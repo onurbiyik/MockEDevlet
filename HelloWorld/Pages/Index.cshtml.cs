@@ -25,7 +25,8 @@ namespace HelloWorld.Pages
         public async Task<IActionResult> OnGetLogoutAsync()
         {
             await HttpContext.SignOutAsync();
-            //SignOut("cookie", "oidc");
+            // await HttpContext.SignOutAsync("oidc");
+            // await HttpContext.SignOutAsync("cookie");
 
             return RedirectToPage("index");
         }

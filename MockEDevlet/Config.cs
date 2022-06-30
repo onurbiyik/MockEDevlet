@@ -58,7 +58,7 @@ public static class Config
             },
 
             // clients may have different sso lifes
-            UserSsoLifetime = 10, // seconds
+            UserSsoLifetime = 100, // seconds
 
             RequirePkce = true,
             AllowPlainTextPkce = false,

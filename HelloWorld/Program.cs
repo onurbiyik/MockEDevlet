@@ -42,8 +42,8 @@ builder.Services.AddAuthentication(opt => {
         // TCKN standart bir oidc alanı olmadığı için bir mapping gerekli.
         opt.ClaimActions.MapUniqueJsonKey("tckn", "tckn"); 
 
-        // save claims to asp.net cookie
-        opt.SaveTokens = true;
+        // whether to save access and refresh tokens as well in the cookie. (claims are always saved)
+        opt.SaveTokens = false;
 
         
         // require users to log in every time, even when they are logged in. (optional)

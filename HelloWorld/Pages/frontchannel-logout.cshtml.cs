@@ -8,7 +8,7 @@ namespace HelloWorld.Pages
     {
         public async Task OnGetAsync(string sid)
         {
-            if (User.Identity.IsAuthenticated)
+            if (User.Identity?.IsAuthenticated == true)
             {
                 var currentSid = User.FindFirst("sid")?.Value ?? "";
                 if (string.Equals(currentSid, sid, StringComparison.Ordinal))
