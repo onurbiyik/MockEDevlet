@@ -31,6 +31,10 @@ builder.Services.AddAuthentication(opt => {
         //opt.Scope.Add("oidc"); // default scope
         //opt.Scope.Add("profile"); // default scope
         //opt.Scope.Add("role");        
+
+
+        // hello api'yi cagirabil
+        opt.Scope.Add("HelloApi");
         
 
         // ek claim bilgilerini login sonrasi otomatik cek.

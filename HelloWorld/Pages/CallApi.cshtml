@@ -1,0 +1,21 @@
+﻿@page
+@model HelloWorld.Pages.CallApiModel
+@{
+    <p>Calling hello world api with client credentials flow</p>
+
+    <table class="table">
+        <tr>
+            <td>Access Token</td>
+            <td><code><small>@Model.AccessToken</small></code></td>
+        </tr>
+        <tr>
+            <td>Refresh Token</td>
+            <td><code><small>@Model.RefreshToken</small></code></td>
+        </tr>
+        <tr>
+            <td>Api Response</td>
+            <td><code><small>@Model.ApiResponse</small></code></td>
+        </tr>
+    </table>
+
+}

@@ -2,6 +2,7 @@
 using Duende.IdentityServer.Models;
 using Duende.IdentityServer.Test;
 using IdentityModel;
+using Microsoft.AspNetCore.Identity;
 using System.Security.Claims;
 
 namespace Aydipi;
@@ -36,8 +37,10 @@ public static class Config
         };
 
     public static IEnumerable<ApiScope> ApiScopes => new ApiScope[]
-            {
-            };
+    {
+        new ApiScope("HelloApi", "Our Hello API", 
+            userClaims: new [] { "WeatherAccess" })
+    };
 
 
     public static IEnumerable<Client> Clients => new [] { 
@@ -47,15 +50,21 @@ public static class Config
             ClientName = "Hello World Uygulamasi",
             ClientSecrets = new List<Secret> {new Secret("EDevletinBizeVerecegiSecret".Sha256())},
 
-            AllowedGrantTypes = GrantTypes.Code,
-            RedirectUris = new List<string> {"https://localhost:7214/signin-oidc"},            
-            AllowedScopes = new List<string>
+            // this app will be using code flow for authorizing end users
+            // this app will also use client credentials flow for calling api (machine-to-machine)
+            AllowedGrantTypes = GrantTypes.CodeAndClientCredentials,
+
+            RedirectUris = new string[] {"https://localhost:7214/signin-oidc"},            
+            AllowedScopes = new string[]
             {
                 IdentityServerConstants.StandardScopes.OpenId,
                 IdentityServerConstants.StandardScopes.Profile,
                 IdentityServerConstants.StandardScopes.Email,
-                "EDevletTemelBilgileri"
+                "EDevletTemelBilgileri",
+                "HelloApi" // this client is allowed to call hello api.
             },
+
+            Claims = new ClientClaim[]{ new ClientClaim("WeatherAccess", "read") },
 
             // clients may have different sso lifes
             UserSsoLifetime = 100, // seconds
