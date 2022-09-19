@@ -53,7 +53,14 @@ public static class Config
                 new Secret
                     {
                         Type = IdentityServerConstants.SecretTypes.JsonWebKey,
-                        Value = "{\r\n    \"kty\": \"RSA\",\r\n    \"e\": \"AQAB\",\r\n    \"kid\": \"EEEEE\",\r\n    \"alg\": \"RS256\",\r\n    \"n\": \"gYNESqM465kLLryEepgjKRw6ywWM8IcMo_PEt3xaf81F0prcrRuDHgqh_zR9priYuA4tmYFyOjxbXraPt3NE7_XxLBv01eMT9gJglW-gN-_Edo9OURMaXVUGxAWB-rkXnTtJRVwzRNZ2ViDq3ZCF1MG6uer9K7IJAML77p79Cxk\"\r\n}"
+                        Value = @"{
+    ""kty"": ""RSA"",
+    ""e"": ""AQAB"",
+    ""use"": ""sig"",
+    ""kid"": ""/43b2M7rVvKBshOg7TptUPpsFTo="",
+    ""alg"": ""RS256"",
+    ""n"": ""qveUPQmWribiRDFWq9az1OA_aKSLwSHUXg2vWiJ4i_zcakxHTg28kz3MK9V2MaPvFWBBmPM2lvu8DxU439t6TsNsp3gtdH_J_KybQzd6ZhEqtA7Mk_FGyP4jhYLGHf65W72nCFNTfStpYaEa-SpRMY4BtW9QAg2Lv4zTb5Uy6C8y3DlZKOro3fgPIbyMJxJKHOrlbbeq2nNLtwU-ZLJ1vEsJl6412KPR7zIzAnJxBldjg1MmKITrHv5jR8SPrD8wo83_Jw6uUZtRgpKYdCGSInqT6OwdFitlE1854Fcnzp8wFflN6GCWCEn73tXenXB4TaD9Ea9h_sb3k12v5pnwYw""
+}"
                     }
             },
 

@@ -10,11 +10,13 @@ internal static class HostingExtensions
         builder.Services.AddRazorPages();
 
         builder.Services.AddIdentityServer()
+            .AddJwtBearerClientAuthentication() // for JWK scenario, read client_assertion body field
             .AddInMemoryIdentityResources(Config.IdentityResources)
             .AddInMemoryApiScopes(Config.ApiScopes)
             .AddInMemoryClients(Config.Clients)
             .AddInMemoryOidcProviders(Config.OidcProviders)
             .AddTestUsers(Config.Users);
+            
 
         return builder.Build();
     }

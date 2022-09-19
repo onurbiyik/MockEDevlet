@@ -19,7 +19,20 @@ namespace HelloWorld.Pages
         internal string? RefreshToken { get; set; }
 
         // public+private keypair from mkjwk.org
-        private static string rsaKey = "{\r\n    \"p\": \"3JpM1XvutaABnA5JY5XsbbvSHK4vy7Bu-8U1LwNkyvyikIfBis_YcxeZppEzuJTnS-pgWKPhIxY3Eu8lLsDtYw\",\r\n    \"kty\": \"RSA\",\r\n    \"q\": \"lktDYj1ezGB1tt3f4M9DLk3RQAUxHbcP7vCw0QFlDsH43rRbhDZzIa_Yti-KpCaZm3J5xCVyCylk5uGeMoXcUw\",\r\n    \"d\": \"Yb5k6wOWsNB3TRV_0lpBpwQkJxcQUHNMCeyu2V_jmTKd8J1p0MfDxAd4TXgbIJmOwNIKfiDgyazFtIyJmIVJT8zdFRFCEOJa6TCX6A8UZWtzw3Mc1gZSdWO9lmKEIj9eGGocv_7G43M7_7ALrjLTD0ftszwXit-jPgpJJ0BS7bU\",\r\n    \"e\": \"AQAB\",\r\n    \"kid\": \"EEEEE\",\r\n    \"qi\": \"c9fhtXwdw0sVgKG731WvDbNxIYqq2Mrns_s_QHz1oSMuLKOtjUi-SmtceSuSFhwFAPLLcl_XmR1zjMQTn29r3w\",\r\n    \"dp\": \"1n5I-sI3xe0_42aYwPWDHuciUrSi0GBKaQ7EuWOJWzztK65z5u5UvQNTaHuCWJSfmFbZOxaMzzrIbeaMtrrrlQ\",\r\n    \"alg\": \"RS256\",\r\n    \"dq\": \"HZ_cOmMKapKg4Vi-plt0TI4-LrZXRhotY9XBpJD30H7fhVZbq6Xn773vo4mfdFe_c2qPIeCXqCeSogfa3O6RzQ\",\r\n    \"n\": \"gYNESqM465kLLryEepgjKRw6ywWM8IcMo_PEt3xaf81F0prcrRuDHgqh_zR9priYuA4tmYFyOjxbXraPt3NE7_XxLBv01eMT9gJglW-gN-_Edo9OURMaXVUGxAWB-rkXnTtJRVwzRNZ2ViDq3ZCF1MG6uer9K7IJAML77p79Cxk\"\r\n}";
+        private static string rsaKey = @"{
+    ""p"": ""4S40kLM4cdQWBJ5rjC_zZ3BOsSlwIXhDgF4gEzXPG7mVboNOhV3QRfDVAFTNUuvHF3ttpwi7qRaLN_gO1Q605HCWVFjn7HexhbApkdRCYvWKqh0kY1hbDr9JYEo5uQLJ3ztj5cHNf-TCll3--yvEXyFc-tgu8inYI1YaAHqe4cc"",
+    ""kty"": ""RSA"",
+    ""q"": ""wl3dQUDpCe2INH6WUiWprmsShyjnPIxnKo7enyswEitz9YDhEF6oAIsIMZO2J_-SCm3NVxKxUW-wNPjn03WH29aNJL1cYKbBBHN4smNuqYfF217v0T9ZnKqttvPlqlocDR3wLCHj3-8wJ7Dx0PkCZx5gkR-vvrm0W_P5waG8PIU"",
+    ""d"": ""VihscRIa-GqqDlma5wBNIhNcgRyjPVISFs_otZC3lTx5y6vjJ0eu57j14oUxijSmMOyQQkcXFKGKFUPJpK6ThYvgfskGhzY7EXXezNHxgexWy-TFXizyUioYtpi_xK_ws3Xw7jYn1eWBtuycjkKwJjv9SnTtKguviHmsuAfFXtJO7cLt1UFJFkeDnmCBZhQdoIWEUk6GihoQRZ9lAhxgMO9pRNpET831-co1wt708Yd-gex4ipis7B8cS4R6YGRSQbDB3UZQE5sSVhrhKJBAGYsHN_zaspicWe4bvgpCmlkV9MSEaYvu0hPBF7rGQz6pd2xOPAc6qZEeuzhheFGOSQ"",
+    ""e"": ""AQAB"",
+    ""use"": ""sig"",
+    ""kid"": ""/43b2M7rVvKBshOg7TptUPpsFTo="",
+    ""qi"": ""WDaErntTxFks5Fk6Wuem_u_uo49bHU0cTfxAzOFpTRpjFNuggaaw_SFLb0HxtOx2V_205PPOtrVxsFKPqruPQEIjEHTbm46SrwJ7ycRZBXMOYhhff5Z7uaynxQjaLxSrwvybxwXc_d7l4QLIcbToIc9USw3wG_oxIf1S0npq6sE"",
+    ""dp"": ""VAy5FiGvOd2d8k9neUYUplFnLf13myaWm32Gn2UATyrwOfXNAz7HFLQV7S-6C-9xurQZc7VwxmZhxJxUfPYmUvYrRoSA3OS4YFwmyAXgWauo_GIwSNyb8F859jT-Yq5Fx4sVeJbkK46pixK-r-XgQFnlqMO0kjNIN7hVsEQUtdU"",
+    ""alg"": ""RS256"",
+    ""dq"": ""sqdyartOOLjjnFTKuQEzYUW7xw561XW8kiq2SBl7Wwgj0wI-XTyUMcOZqXA7W7KXOwzIVIOzBsahcV9kP0LluNUR8TY5BgHgosW8qEOrARrya3xs9KnFJbLgb6zpalbfN9NP4lDYUwpY-fKzosBvS_dpDZvRf37UYDz2Udvm2L0"",
+    ""n"": ""qveUPQmWribiRDFWq9az1OA_aKSLwSHUXg2vWiJ4i_zcakxHTg28kz3MK9V2MaPvFWBBmPM2lvu8DxU439t6TsNsp3gtdH_J_KybQzd6ZhEqtA7Mk_FGyP4jhYLGHf65W72nCFNTfStpYaEa-SpRMY4BtW9QAg2Lv4zTb5Uy6C8y3DlZKOro3fgPIbyMJxJKHOrlbbeq2nNLtwU-ZLJ1vEsJl6412KPR7zIzAnJxBldjg1MmKITrHv5jR8SPrD8wo83_Jw6uUZtRgpKYdCGSInqT6OwdFitlE1854Fcnzp8wFflN6GCWCEn73tXenXB4TaD9Ea9h_sb3k12v5pnwYw""
+}";
 
 
         public async Task OnGetAsync()
@@ -34,7 +47,7 @@ namespace HelloWorld.Pages
             var disco = await tokenClient.GetDiscoveryDocumentAsync("https://localhost:5001");
             if (disco.IsError) throw new Exception(disco.Error);
 
-            var clientToken = CreateClientToken(signingCred, "EDevletinBizeVerecegiClientId", "HelloApi");
+            var clientToken = CreateClientToken(signingCred, "EDevletinBizeVerecegiClientId", disco.TokenEndpoint);
             var tokenResponse = await tokenClient.RequestClientCredentialsTokenAsync(new ClientCredentialsTokenRequest
             {
                 Address = disco.TokenEndpoint,
