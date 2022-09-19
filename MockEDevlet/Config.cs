@@ -48,7 +48,14 @@ public static class Config
         {
             ClientId = "EDevletinBizeVerecegiClientId",
             ClientName = "Hello World Uygulamasi",
-            ClientSecrets = new List<Secret> {new Secret("EDevletinBizeVerecegiSecret".Sha256())},
+            ClientSecrets = new List<Secret> {
+                new Secret("EDevletinBizeVerecegiSecret".Sha256()),
+                new Secret
+                    {
+                        Type = IdentityServerConstants.SecretTypes.JsonWebKey,
+                        Value = "{\r\n    \"kty\": \"RSA\",\r\n    \"e\": \"AQAB\",\r\n    \"kid\": \"EEEEE\",\r\n    \"alg\": \"RS256\",\r\n    \"n\": \"gYNESqM465kLLryEepgjKRw6ywWM8IcMo_PEt3xaf81F0prcrRuDHgqh_zR9priYuA4tmYFyOjxbXraPt3NE7_XxLBv01eMT9gJglW-gN-_Edo9OURMaXVUGxAWB-rkXnTtJRVwzRNZ2ViDq3ZCF1MG6uer9K7IJAML77p79Cxk\"\r\n}"
+                    }
+            },
 
             // this app will be using code flow for authorizing end users
             // this app will also use client credentials flow for calling api (machine-to-machine)

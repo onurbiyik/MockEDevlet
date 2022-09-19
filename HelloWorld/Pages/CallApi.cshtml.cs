@@ -31,8 +31,8 @@ namespace HelloWorld.Pages
 
 
             var apiClient = new HttpClient();
-
-            apiClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", AccessToken);
+            
+            apiClient.SetBearerToken(AccessToken);
 
             var apiResponse = await apiClient.GetStringAsync("https://localhost:7202/WeatherForecast");
             
