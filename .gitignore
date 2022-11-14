@@ -350,3 +350,4 @@ MigrationBackup/
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
 
+/MockEDevlet/keys/is-signing-key-AFB53C515AB4D47BE897D9C915DCE012.json
