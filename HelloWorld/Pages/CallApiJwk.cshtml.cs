@@ -1,10 +1,5 @@
 using IdentityModel.Client;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using IdentityModel.Client;
-using System.Net.Http.Headers;
-using System.Security.Cryptography.X509Certificates;
-using Microsoft.VisualBasic;
 using Microsoft.IdentityModel.Tokens;
 using IdentityModel;
 using System.IdentityModel.Tokens.Jwt;
